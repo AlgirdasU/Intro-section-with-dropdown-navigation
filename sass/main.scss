@@ -1,0 +1,21 @@
+$color-almost-white: rgb(250, 250, 250); //hsl(0, 0%, 98%
+$color-medium-gray: rgb(105, 105, 105); //hsl(0, 0%, 41%)
+$color-almost-black: rgb(20, 20, 20); //hsl(0, 0%, 8%)
+
+//
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 200;
+}
