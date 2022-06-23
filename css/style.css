@@ -1,6 +1,4 @@
-*,
-*::after,
-*::before {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
@@ -9,5 +7,66 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: "Courier New", Courier, monospace;
-  font-weight: 200; }
+  font-family: "Epilogue", sans-serif;
+  font-weight: 500;
+  line-height: 1.6;
+  background-color: #fafafa; }
+
+.header {
+  display: flex;
+  align-items: center; }
+  .header__logo {
+    min-height: 2.5rem;
+    min-width: 7.5rem;
+    max-height: 2.5rem;
+    max-width: 7.5rem;
+    margin: 3rem 3rem;
+    fill: #141414; }
+
+.menu-nav {
+  margin-right: auto; }
+  .menu-nav__list {
+    list-style: none;
+    display: flex;
+    gap: 3.5rem;
+    font-size: 1.4rem;
+    letter-spacing: 0.3px;
+    padding-left: 3.5rem; }
+  .menu-nav__link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: dimgray; }
+  .menu-nav__icon {
+    fill: #778fee;
+    height: 1rem;
+    width: 1rem;
+    margin-left: 0.8rem; }
+  .menu-nav__icon--hidden {
+    display: none; }
+
+.btn {
+  display: flex;
+  gap: 3.5rem;
+  margin-right: 3.5rem; }
+  .btn__login {
+    border: none;
+    font-family: inherit;
+    font-size: 1.4rem;
+    background-color: inherit; }
+  .btn__register {
+    padding: 1.2rem 1.8rem;
+    border-radius: 1.2rem;
+    border: 0.2rem solid dimgray;
+    font-family: inherit;
+    font-size: 1.4rem;
+    letter-spacing: 0.3px;
+    background-color: inherit;
+    color: dimgray; }
+
+.attribution {
+  font-size: 11px;
+  text-align: center; }
+  .attribution a {
+    color: #778fee;
+    text-decoration: none; }

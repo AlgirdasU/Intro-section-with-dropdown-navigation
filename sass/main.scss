@@ -2,10 +2,9 @@ $color-almost-white: rgb(250, 250, 250); //hsl(0, 0%, 98%
 $color-medium-gray: rgb(105, 105, 105); //hsl(0, 0%, 41%)
 $color-almost-black: rgb(20, 20, 20); //hsl(0, 0%, 8%)
 
-//
-*,
-*::after,
-*::before {
+$color-mentor-author: rgb(119, 143, 238);
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -16,6 +15,89 @@ html {
 }
 
 body {
-  font-family: "Courier New", Courier, monospace;
-  font-weight: 200;
+  font-family: "Epilogue", sans-serif;
+  font-weight: 500;
+  line-height: 1.6;
+  background-color: $color-almost-white;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+
+  &__logo {
+    min-height: 2.5rem;
+    min-width: 7.5rem;
+    max-height: 2.5rem;
+    max-width: 7.5rem;
+    margin: 3rem 3rem;
+    fill: $color-almost-black;
+  }
+}
+
+.menu-nav {
+  margin-right: auto;
+  &__list {
+    list-style: none;
+    display: flex;
+    gap: 3.5rem;
+    font-size: 1.4rem;
+    letter-spacing: 0.3px;
+    padding-left: 3.5rem;
+  }
+
+  &__item {
+  }
+
+  &__link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: $color-medium-gray;
+  }
+
+  &__icon {
+    fill: $color-mentor-author;
+    height: 1rem;
+    width: 1rem;
+
+    margin-left: 0.8rem;
+  }
+
+  &__icon--hidden {
+    display: none;
+  }
+}
+
+.btn {
+  display: flex;
+  gap: 3.5rem;
+  margin-right: 3.5rem;
+  &__login {
+    border: none;
+    font-family: inherit;
+    font-size: 1.4rem;
+    background-color: inherit;
+  }
+
+  &__register {
+    padding: 1.2rem 1.8rem;
+    border-radius: 1.2rem;
+    border: 0.2rem solid $color-medium-gray;
+    font-family: inherit;
+    font-size: 1.4rem;
+    letter-spacing: 0.3px;
+    background-color: inherit;
+    color: $color-medium-gray;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+
+  a {
+    color: $color-mentor-author;
+    text-decoration: none;
+  }
 }

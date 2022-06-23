@@ -1,39 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <header class="header">
+      <svg class="header__logo">
+        <use xLink:href="images/sprite.svg#logo"></use>
+      </svg>
+      <!-- <img src="images/logo.svg" alt="Snap logo" class="header__logo" /> -->
+      <nav class="menu-nav">
+        <ul class="menu-nav__list">
+          <li class="menu-nav__item">
+            <a href="#" class="menu-nav__link">
+              <span>Features</span>
+              <svg class="menu-nav__icon">
+                <use xLink:href="images/sprite.svg#icon-arrow-down"></use>
+              </svg>
+              <svg class="menu-nav__icon menu-nav__icon--hidden">
+                <use xLink:href="images/sprite.svg#icon-arrow-up"></use>
+              </svg>
+            </a>
+          </li>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+          <li class="menu-nav__item">
+            <a href="#" class="menu-nav__link">
+              <span>Company</span>
+              <svg class="menu-nav__icon">
+                <use xLink:href="images/sprite.svg#icon-arrow-down"></use>
+              </svg>
+              <svg class="menu-nav__icon menu-nav__icon--hidden">
+                <use xLink:href="images/sprite.svg#icon-arrow-up"></use>
+              </svg>
+            </a>
+          </li>
 
-  Features
-  Company
-  Careers
-  About
+          <li class="menu-nav__item">
+            <a class="menu-nav__link" href="#">Careers</a>
+          </li>
+          <li class="menu-nav__item">
+            <a class="menu-nav__link" href="#">About</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="btn">
+        <button class="btn__login"><span>Login</span></button>
+        <button class="btn__register"><span>Register</span></button>
+      </div>
+    </header>
+    Make remote work Get your team in sync, no matter your location. Streamline
+    processes, create team rituals, and watch productivity soar. Learn more!
 
-  Login
-  Register
-
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Algirdas Urbonavicius</a>.
+    </div>
+  </body>
 </html>
