@@ -9,13 +9,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
+    <script defer src="script.js"></script>
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
   </head>
   <body>
@@ -23,49 +24,142 @@
       <svg class="header__logo">
         <use xLink:href="images/sprite.svg#logo"></use>
       </svg>
-      <!-- <img src="images/logo.svg" alt="Snap logo" class="header__logo" /> -->
       <nav class="menu-nav">
-        <ul class="menu-nav__list">
-          <li class="menu-nav__item">
-            <a href="#" class="menu-nav__link">
+        <div class="menu-nav__list">
+          <div class="menu-nav__item">
+            <div class="menu-nav__link" data-btn="1">
               <span>Features</span>
-              <svg class="menu-nav__icon">
-                <use xLink:href="images/sprite.svg#icon-arrow-down"></use>
-              </svg>
-              <svg class="menu-nav__icon menu-nav__icon--hidden">
-                <use xLink:href="images/sprite.svg#icon-arrow-up"></use>
-              </svg>
-            </a>
-          </li>
+              <img
+                class="menu-nav__icon menu-nav__icon--down"
+                src="images/icon-arrow-down.svg"
+                alt="Icon arrow down"
+              />
+            </div>
 
-          <li class="menu-nav__item">
-            <a href="#" class="menu-nav__link">
+            <div class="dropdown dropdown__1">
+              <ul class="dropdown__list dropdown__list--features">
+                <li class="dropdown__item">
+                  <img
+                    class="dropdown__icon dropdown__icon--todo"
+                    src="images/icon-todo.svg"
+                    alt="Icon todo"
+                  />
+                  <a href="#" class="dropdown__link">Todo List</a>
+                </li>
+                <li class="dropdown__item">
+                  <img
+                    class="dropdown__icon dropdown__icon--calendar"
+                    src="images/icon-calendar.svg"
+                    alt="Icon calendar"
+                  />
+                  <a href="#" class="dropdown__link">Calendar</a>
+                </li>
+                <li class="dropdown__item">
+                  <svg class="dropdown__icon dropdown__icon--reminders">
+                    <use xLink:href="images/sprite.svg#icon-reminders"></use>
+                  </svg>
+                  <a href="#" class="dropdown__link">Reminders</a>
+                </li>
+                <li class="dropdown__item">
+                  <svg class="dropdown__icon dropdown__icon--planning">
+                    <use xLink:href="images/sprite.svg#icon-planning"></use>
+                  </svg>
+                  <a href="#" class="dropdown__link">Planning</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="menu-nav__item">
+            <div class="menu-nav__link" data-btn="2">
               <span>Company</span>
-              <svg class="menu-nav__icon">
-                <use xLink:href="images/sprite.svg#icon-arrow-down"></use>
-              </svg>
-              <svg class="menu-nav__icon menu-nav__icon--hidden">
-                <use xLink:href="images/sprite.svg#icon-arrow-up"></use>
-              </svg>
-            </a>
-          </li>
+              <img
+                class="menu-nav__icon menu-nav__icon--down"
+                src="images/icon-arrow-down.svg"
+                alt="Icon arrow down"
+              />
+            </div>
 
-          <li class="menu-nav__item">
+            <div class="dropdown dropdown__2">
+              <ul class="dropdown__list dropdown__list--company">
+                <li class="dropdown__item">
+                  <a href="#" class="dropdown__link">History</a>
+                </li>
+                <li class="dropdown__item">
+                  <a href="#" class="dropdown__link">Our Team</a>
+                </li>
+                <li class="dropdown__item">
+                  <a href="#" class="dropdown__link">Blog</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="menu-nav__item">
             <a class="menu-nav__link" href="#">Careers</a>
-          </li>
-          <li class="menu-nav__item">
+          </div>
+          <div class="menu-nav__item">
             <a class="menu-nav__link" href="#">About</a>
-          </li>
-        </ul>
+          </div>
+        </div>
+        <div class="btn-box">
+          <button class="btn btn__login"><span>Login</span></button>
+          <button class="btn btn__register">
+            <span>Register</span>
+          </button>
+        </div>
       </nav>
-      <div class="btn">
-        <button class="btn__login"><span>Login</span></button>
-        <button class="btn__register"><span>Register</span></button>
-      </div>
-    </header>
-    Make remote work Get your team in sync, no matter your location. Streamline
-    processes, create team rituals, and watch productivity soar. Learn more!
 
+      <button class="btn-mobile-nav">
+        <img
+          src="images/icon-menu.svg"
+          alt="Icon open menu"
+          class="btn-mobile-nav__icon btn-mobile-nav__icon--open"
+        />
+        <img
+          src="images/icon-close-menu.svg"
+          alt="Icon close menu"
+          class="btn-mobile-nav__icon btn-mobile-nav__icon--close"
+        />
+      </button>
+    </header>
+
+    <main>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero__text--box">
+            <h1 class="hero__heading--primary">
+              Make <br />
+              remote work
+            </h1>
+            <p class="hero__description">
+              Get your team in sync, no matter your location. Streamline
+              processes, create team rituals, and watch productivity soar.
+            </p>
+            <a href="#" class="btn btn--more">Learn more</a>
+            <div class="logos-featured">
+              <img src="images/client-databiz.svg" alt="Databiz logo" />
+              <img src="images/client-audiophile.svg" alt="Audio phile logo" />
+              <img src="images/client-meet.svg" alt="Meet logo" />
+              <img src="images/client-maker.svg" alt="Maker logo" />
+            </div>
+          </div>
+
+          <div class="hero-img-box">
+            <img
+              src="images/image-hero-desktop.png"
+              alt="The man working on the computer, colorful shapes around him."
+              class="hero-img-desktop"
+            />
+            <img
+              src="images/image-hero-mobile.png"
+              alt="The man working on the computer, colorful shapes around him."
+              class="hero-img-mobile"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
