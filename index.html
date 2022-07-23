@@ -20,24 +20,29 @@
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header nav-open">
       <svg class="header__logo">
         <use xLink:href="images/sprite.svg#logo"></use>
       </svg>
       <nav class="menu-nav">
         <div class="menu-nav__list">
-          <div class="menu-nav__item">
+          <div class="menu-nav__item menu-nav__item--hover">
             <div class="menu-nav__link" data-btn="1">
               <span>Features</span>
               <img
-                class="menu-nav__icon menu-nav__icon--down"
+                class="menu-nav__icon menu-nav__icon--1"
                 src="images/icon-arrow-down.svg"
                 alt="Icon arrow down"
               />
+              <!-- <img
+                class="menu-nav__icon menu-nav__icon--2 menu-nav__icon--hidden"
+                src="images/icon-arrow-up.svg"
+                alt="Icon arrow up"
+              /> -->
             </div>
 
             <div class="dropdown dropdown__1">
-              <ul class="dropdown__list dropdown__list--features">
+              <ul class="dropdown__list dropdown__list--1">
                 <li class="dropdown__item">
                   <img
                     class="dropdown__icon dropdown__icon--todo"
@@ -70,18 +75,23 @@
             </div>
           </div>
 
-          <div class="menu-nav__item">
+          <div class="menu-nav__item menu-nav__item--hover">
             <div class="menu-nav__link" data-btn="2">
               <span>Company</span>
               <img
-                class="menu-nav__icon menu-nav__icon--down"
+                class="menu-nav__icon menu-nav__icon--2"
                 src="images/icon-arrow-down.svg"
                 alt="Icon arrow down"
               />
+              <!-- <img
+                class="menu-nav__icon menu-nav__icon--2 menu-nav__icon--hidden"
+                src="images/icon-arrow-up.svg"
+                alt="Icon arrow up"
+              /> -->
             </div>
 
             <div class="dropdown dropdown__2">
-              <ul class="dropdown__list dropdown__list--company">
+              <ul class="dropdown__list dropdown__list--2">
                 <li class="dropdown__item">
                   <a href="#" class="dropdown__link">History</a>
                 </li>
