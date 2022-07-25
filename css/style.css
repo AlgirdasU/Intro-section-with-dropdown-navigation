@@ -79,6 +79,8 @@ body {
     position: relative; }
   .dropdown__list--1 {
     right: 0; }
+  .dropdown__link:hover {
+    color: #141414; }
   .dropdown__item:not(:last-child) {
     margin-bottom: 1rem; }
   .dropdown__item {

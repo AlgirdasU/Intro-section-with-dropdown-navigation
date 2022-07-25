@@ -125,6 +125,10 @@ body {
     right: 0;
   }
 
+  &__link:hover {
+    color: $color-almost-black;
+  }
+
   &__item:not(:last-child) {
     margin-bottom: 1rem;
   }
