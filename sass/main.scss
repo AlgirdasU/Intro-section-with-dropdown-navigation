@@ -81,6 +81,10 @@ body {
     cursor: pointer;
   }
 
+  &__link:hover {
+    color: $color-almost-black;
+  }
+
   &__icon {
     margin-left: 0.8rem;
   }

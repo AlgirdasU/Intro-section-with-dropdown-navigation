@@ -52,6 +52,8 @@ body {
     color: #696969;
     padding: 1.5rem 0 1.5rem 0;
     cursor: pointer; }
+  .menu-nav__link:hover {
+    color: #141414; }
   .menu-nav__icon {
     margin-left: 0.8rem; }
   .menu-nav__icon--rotate {
