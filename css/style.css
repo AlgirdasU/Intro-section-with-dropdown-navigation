@@ -62,7 +62,6 @@ body {
 
 .dropdown {
   visibility: hidden;
-  pointer-events: none;
   list-style: none;
   position: relative; }
   .dropdown__visible {

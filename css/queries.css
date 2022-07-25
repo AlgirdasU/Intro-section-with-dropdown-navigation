@@ -19,20 +19,9 @@
 
 /* 1024px */
 @media (max-width: 64em) {
-  /* .hero__heading--primary {
-    font-size: 3.8rem;
-  } */
-
-  /* .hero__description {
-    max-width: 100%;
-  } */
-
   .logos-featured {
     margin-top: 8rem;
   }
-  /* ///////// */
-
-  /* //////////////// */
 
   .hero__description {
     margin-bottom: 3.5rem;
@@ -58,9 +47,6 @@
 
 /* 900px */
 @media (max-width: 56.25em) {
-  /* .section-hero {
-    max-width: 80rem;
-  } */
   .header {
     margin: 2.5rem 2.8rem 1.8rem;
   }
@@ -80,7 +66,6 @@
 
   .logos-featured {
     justify-content: center;
-    /* margin: 0 auto; */
   }
 
   .hero-img-box {
@@ -107,11 +92,20 @@
     display: flex;
     width: 100%;
   }
-  .hero-img-box {
-  }
+
   /* MOBILE NAVIGATIOn */
+  .transparent-mobile-bc {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(20, 20, 20, 0.75);
+    opacity: 1;
+    visibility: visible;
+  }
+
   .btn-mobile-nav {
-    /* display: block; */
     position: absolute;
     top: 1.5rem;
     right: 2rem;
@@ -119,11 +113,10 @@
 
   .btn-mobile-nav__icon--open {
     display: block;
+    z-index: 1000;
   }
 
   .menu-nav {
-    /* display: flex;
-    align-items: flex-start; */
     background-color: rgba(255, 255, 255, 1);
     position: absolute;
     top: 0;
@@ -134,11 +127,10 @@
     justify-content: flex-start;
     align-items: flex-start;
     padding: 0 2rem;
+    z-index: 999;
     transform: translateX(100%);
-    transition: all 0.16s ease-out;
 
     /* HIDE NAVIGATION */
-    /* display: none; */
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
@@ -149,6 +141,7 @@
     pointer-events: auto;
     visibility: visible;
     transform: translateX(0);
+    transition: all 0.16s ease-out;
   }
 
   .nav-open .btn-mobile-nav__icon--open {
@@ -156,13 +149,13 @@
   }
   .nav-open .btn-mobile-nav__icon--close {
     display: block;
+    z-index: 1000;
   }
   .menu-nav__list {
     flex-direction: column;
     font-size: 1.7rem;
     margin: 6rem 0 2.5rem 0;
     gap: 0;
-    width: 17rem;
   }
 
   .menu-nav__link {
@@ -176,10 +169,7 @@
   .dropdown__item:not(:last-child) {
     margin-bottom: 1.3rem;
   }
-  /* .dropdown__list--features {
-    left: 0;
-    right: auto;
-  } */
+
   .btn-box {
     flex-direction: column;
     margin-left: 0;
